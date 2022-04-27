@@ -1,4 +1,4 @@
-import "./favoritesBand.style.scss";
+import "./FavoritesBand.style.scss";
 import { useDispatch } from "react-redux";
 import { removeFromFavorites } from "../../redux/actions/favorites.actions";
 import NotAvaliableImage from "../../assets/not-avalible.jpg";

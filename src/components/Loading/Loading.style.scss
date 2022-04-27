@@ -1,0 +1,20 @@
+@use "../../sass/utils";
+
+.loader {
+  border-radius: 50%;
+  width: utils.rem(80);
+  height: utils.rem(80);
+  border: 10px solid utils.$gray;
+  margin-top: utils.rem(150);
+  border-bottom: 10px solid utils.$dark-gray;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

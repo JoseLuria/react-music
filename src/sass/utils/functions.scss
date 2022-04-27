@@ -1,0 +1,10 @@
+// Funcion para convetir px a rem (recibe el valor en px)
+@function rem($value) {
+  $remValue: calc($value / 16) + rem;
+  @return $remValue;
+}
+
+// Funcion para cambiar la opacidad de un color (recibe el color y el numero de opacidad en decimales)
+@function color-opacity($alpha, $color) {
+  @return rgba(red($color), green($color), blue($color), $alpha);
+}

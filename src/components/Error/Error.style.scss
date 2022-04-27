@@ -1,0 +1,12 @@
+@use "../../sass/utils";
+
+.error-container {
+  margin-top: utils.rem(24);
+  width: 100%;
+  max-width: utils.rem(250);
+  text-align: center;
+
+  .error-logo {
+    width: 100%;
+  }
+}

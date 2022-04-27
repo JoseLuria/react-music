@@ -1,0 +1,95 @@
+@use "../../sass/utils";
+
+.navbar {
+  background-color: utils.$black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: utils.rem(90);
+  padding: 0 utils.rem(24);
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid utils.$dark-gray;
+  z-index: 1;
+
+  @include utils.breakpoint(utils.$size-md) {
+    padding: 0 utils.rem(40);
+  }
+
+  &-container {
+    width: 100%;
+    max-width: utils.$max-w;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar-menu-button {
+      @include utils.breakpoint(utils.$size-md) {
+        display: none;
+      }
+    }
+
+    .menu-list-container {
+      background-color: utils.color-opacity(0.8, utils.$black);
+      width: 100%;
+      display: none;
+      position: fixed;
+      top: utils.rem(90);
+      left: 0;
+      height: calc(100vh - utils.rem(90));
+      justify-content: center;
+      padding: utils.rem(24);
+
+      @include utils.breakpoint(utils.$size-md) {
+        display: block;
+        width: auto;
+        position: static;
+        background: none;
+        height: auto;
+        padding: 0;
+      }
+
+      .menu-list {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: utils.rem(24);
+        border-radius: utils.rem(8);
+        background-color: utils.$white;
+        padding: utils.rem(24);
+        height: fit-content;
+
+        @include utils.breakpoint(utils.$size-md) {
+          flex-direction: row;
+          align-items: center;
+          gap: utils.rem(24);
+          border-radius: 0;
+          width: auto;
+          background: none;
+          padding: 0;
+        }
+
+        .menu-list-item a {
+          color: utils.$black;
+          font-weight: 700;
+
+          @include utils.breakpoint(utils.$size-md) {
+            font-weight: 500;
+            color: utils.$white;
+
+            @include utils.hover {
+              color: utils.$green;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .menu-list-container-active {
+      display: flex;
+    }
+  }
+}

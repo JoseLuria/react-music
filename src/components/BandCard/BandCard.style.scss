@@ -1,0 +1,103 @@
+@use "../../sass/utils";
+
+.band-card {
+  width: 100%;
+
+  @include utils.breakpoint(utils.$size-lg) {
+    display: flex;
+    align-items: center;
+    gap: utils.rem(60);
+  }
+
+  .band-image {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: utils.rem(400);
+    max-height: utils.rem(400);
+    margin-bottom: utils.rem(24);
+
+    @include utils.breakpoint(utils.$size-lg) {
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+    .band-image-cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .band-image-filter {
+      position: relative;
+    }
+  }
+
+  .band-info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: utils.rem(24);
+    text-align: center;
+
+    @include utils.breakpoint(utils.$size-lg) {
+      flex-grow: 1;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .band-header {
+      @include utils.breakpoint(utils.$size-lg) {
+        display: flex;
+        align-items: center;
+        gap: utils.rem(24);
+      }
+
+      .band-name {
+        font-size: utils.rem(40);
+        margin-bottom: utils.rem(24);
+
+        @include utils.breakpoint(utils.$size-lg) {
+          margin-bottom: 0;
+        }
+      }
+
+      .band-genre {
+        margin: 0 auto;
+        width: fit-content;
+        background-color: utils.$dark-gray;
+        padding: utils.rem(10) utils.rem(20);
+        border-radius: utils.rem(5);
+
+        @include utils.breakpoint(utils.$size-lg) {
+          margin: 0;
+        }
+      }
+    }
+
+    .band-description {
+      max-width: utils.rem(649);
+      width: 100%;
+      font-size: utils.rem(13);
+      font-weight: 300;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .add-to-favorites-button {
+      border-radius: utils.rem(15);
+      font-size: utils.rem(16);
+      padding: utils.rem(15) utils.rem(20);
+      color: utils.$white;
+      background-color: utils.$green;
+
+      @include utils.hover {
+        background-color: utils.$light-green;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@use "../../sass/utils";
+
+.favorite-band {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  max-width: utils.rem(600);
+  background-color: utils.$dark-gray;
+  gap: utils.rem(20);
+
+  &-image {
+    width: utils.rem(120);
+  }
+
+  &-content {
+    .favorite-band-name {
+      font-size: utils.rem(16);
+      margin-bottom: utils.rem(20);
+    }
+
+    .favorite-button {
+      font-weight: 700;
+      padding: utils.rem(2) utils.rem(10);
+      background-color: utils.$green;
+      color: utils.$white;
+      border-radius: utils.rem(5);
+    }
+  }
+}

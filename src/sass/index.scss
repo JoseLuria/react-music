@@ -1,0 +1,49 @@
+@use "../sass/utils";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: utils.$black;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  background: none;
+}
+
+hr {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+a,
+input {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

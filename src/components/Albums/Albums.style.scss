@@ -1,0 +1,60 @@
+@use "../../sass/utils";
+
+.albums-container {
+  width: 100%;
+  background-color: utils.color-opacity(0.4, utils.$dark-gray);
+
+  @include utils.breakpoint(utils.$size-lg) {
+    display: flex;
+  }
+
+  .albums-title {
+    padding: utils.rem(15) utils.rem(30);
+    text-align: center;
+    background-color: utils.$dark-gray;
+
+    @include utils.breakpoint(utils.$size-lg) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: utils.rem(400);
+    }
+  }
+
+  .album-list {
+    @include utils.breakpoint(utils.$size-lg) {
+      height: full;
+      flex-grow: 1;
+      overflow: auto;
+      max-height: utils.rem(400);
+      scrollbar-width: 10px;
+      scrollbar-color: utils.$dark-gray transparent;
+
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: utils.$dark-gray;
+        border-radius: 6px;
+      }
+    }
+
+    .album-list-item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: utils.rem(20) utils.rem(30);
+      border-bottom: 1px solid utils.$dark-gray;
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .error-message {
+    text-align: center;
+    padding: utils.rem(50);
+  }
+}

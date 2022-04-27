@@ -1,0 +1,32 @@
+@use "../../sass/utils";
+
+.search-bar {
+  width: 100%;
+  max-width: utils.rem(500);
+  height: utils.rem(50);
+  display: flex;
+  align-items: center;
+
+  &-input {
+    background-color: utils.$white;
+    padding: 0 utils.rem(20);
+    flex-grow: 1;
+    height: 100%;
+    font-size: utils.rem(16);
+    border-radius: utils.rem(40) 0 0 utils.rem(40);
+  }
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: utils.rem(80);
+    background-color: utils.$green;
+    height: 100%;
+    border-radius: 0 utils.rem(40) utils.rem(40) 0;
+
+    @include utils.hover {
+      background-color: utils.$light-green;
+    }
+  }
+}

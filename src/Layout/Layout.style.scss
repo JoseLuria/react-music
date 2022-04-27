@@ -1,0 +1,44 @@
+@use "../sass/utils";
+
+.layout {
+  min-height: calc(100vh - utils.rem(90));
+  color: utils.$white;
+  margin-top: utils.rem(90);
+  padding: utils.rem(40) utils.rem(24);
+
+  @include utils.breakpoint(utils.$size-md) {
+    padding: utils.rem(60) utils.rem(40);
+  }
+
+  &-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: utils.rem(40);
+    width: 100%;
+    max-width: utils.$max-w;
+    margin: 0 auto;
+
+    @include utils.breakpoint(utils.$size-md) {
+      gap: utils.rem(60);
+    }
+  }
+
+  .github-float-button {
+    display: flex;
+    border-radius: 50%;
+    padding: utils.rem(10);
+    background-color: utils.$green;
+    position: fixed;
+    bottom: utils.rem(40);
+    right: utils.rem(24);
+
+    @include utils.breakpoint(utils.$size-md) {
+      right: utils.rem(40);
+    }
+
+    @include utils.hover {
+      background-color: utils.$light-green;
+    }
+  }
+}

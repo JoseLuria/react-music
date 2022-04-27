@@ -2,6 +2,8 @@
 
 Una aplicación que permite buscar información sobre diversas bandas y artistas musicales y agregarlos a favoritos usando la API de [AudioDB](https://www.theaudiodb.com/api_guide.php)
 
+[Aquí puedes ver el sitio en vivo](https://sensational-sprinkles-de98e3.netlify.app/)
+
 ## 🖼️ Capturas de pantalla
 
 ![Screenshot](./src/assets/page-screenshot.png)

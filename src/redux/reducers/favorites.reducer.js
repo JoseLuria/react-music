@@ -16,6 +16,11 @@ export const favoritesReducer = (state = initialState, action) => {
         ...state,
         favoritesList: state.favoritesList.filter(({ id }) => id !== action.payload),
       };
+    case favoritesTypes.SET:
+      return {
+        ...state,
+        favoritesList: action.payload,
+      };
     default:
       return state;
   }

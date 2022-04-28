@@ -1,4 +1,5 @@
 export const favoritesTypes = {
-  ADD: "ADD_ONE",
-  REMOVE: "REMOVE_ONE",
+  ADD: "ADD",
+  REMOVE: "REMOVE",
+  SET: "SET",
 };

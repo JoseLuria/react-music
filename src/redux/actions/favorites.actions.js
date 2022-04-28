@@ -13,3 +13,10 @@ export const removeFromFavorites = (id) => {
     payload: id,
   };
 };
+
+export const setFavorites = (list) => {
+  return {
+    type: favoritesTypes.SET,
+    payload: list,
+  };
+};

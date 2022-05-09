@@ -1,4 +1,4 @@
-# 🤖React Music (Prueba de conocimiento de Cura Deuda)
+# 🤖React Music
 
 Una aplicación que permite buscar información sobre diversas bandas y artistas musicales y agregarlos a favoritos usando la API de [AudioDB](https://www.theaudiodb.com/api_guide.php)
 
@@ -21,7 +21,7 @@ git clone https://github.com/JoseLuria/react-music.git
 ### Después con el siguiente comando instala las dependencias:
 
 ```shell
-npm install
+npm instalil
 ```
 
 ### Por último inicia el repositorio con el siguiente comando:

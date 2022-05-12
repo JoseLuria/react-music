@@ -1,4 +1,4 @@
-import { favoritesTypes } from "../types/favorites.tyles";
+import { favoritesTypes } from "../types/favorites.type";
 
 const initialState = {
   favoritesList: [],

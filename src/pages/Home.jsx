@@ -1,15 +1,13 @@
 import { useState, useEffect } from "react";
-import { handleFormatText } from "../../utils/handleFormatText";
-import SearchBar from "../../components/SearchBar/SearchBar";
-import Loading from "../../components/Loading/Loading";
-import BandCard from "../../components/BandCard/BandCard";
-import Albums from "../../components/Albums/Albums";
-import Error from "../../components/Error/Error";
+import { handleFormatText } from "../utils/handleFormatText";
+import SearchBar from "../components/SearchBar/SearchBar";
+import Loading from "../components/Loading/Loading";
+import BandCard from "../components/BandCard/BandCard";
+import Albums from "../components/Albums/Albums";
+import Error from "../components/Error/Error";
 
 const Home = () => {
-  const [bandName, setBandName] = useState(
-    localStorage.lastSearch ? localStorage.lastSearch : "coldplay",
-  );
+  const [bandName, setBandName] = useState(localStorage.lastSearch ? localStorage.lastSearch : "coldplay");
   const [bandData, setBandData] = useState({});
   const [showLoader, setShowLoader] = useState(false);
 

@@ -1,4 +1,4 @@
-import { favoritesTypes } from "../types/favorites.tyles";
+import { favoritesTypes } from "../types/favorites.type";
 
 export const addToFavorites = (artist) => {
   return {

@@ -1,6 +1,6 @@
-import Error from "../../components/Error/Error";
 import { useSelector } from "react-redux";
-import FavoriteBand from "../../components/FavoriteBand/FavoriteBand";
+import Error from "../components/Error/Error";
+import FavoriteBand from "../components/FavoriteBand/FavoriteBand";
 
 const Favorites = () => {
   const { favoritesList } = useSelector(({ favorites }) => favorites);

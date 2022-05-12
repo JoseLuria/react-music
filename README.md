@@ -21,7 +21,7 @@ git clone https://github.com/JoseLuria/react-music.git
 ### Después con el siguiente comando instala las dependencias:
 
 ```shell
-npm instalil
+npm install
 ```
 
 ### Por último inicia el repositorio con el siguiente comando:

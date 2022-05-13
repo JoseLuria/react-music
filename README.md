@@ -10,8 +10,6 @@ Una aplicación que permite buscar información sobre diversas bandas y artistas
 
 ## 🚀 ¿Como usar?
 
-Clona e inicia el repositorio, para esta debes hacer lo siguiente:
-
 ### Primero debes de clonar el repositorio desde GitHub con el siguiente comando:
 
 ```shell
@@ -36,6 +34,6 @@ npm run dev
 - [Sass](https://sass-lang.com/)
 - [Vite](https://vitejs.dev/)
 
-## License
+## 📄 License
 
 [MIT](https://opensource.org/licenses/MIT)

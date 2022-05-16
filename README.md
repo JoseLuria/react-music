@@ -1,4 +1,4 @@
-# 🤖React Music
+# 🤖 React Music
 
 Una aplicación que permite buscar información sobre diversas bandas y artistas musicales y agregarlos a favoritos usando la API de [AudioDB](https://www.theaudiodb.com/api_guide.php)
 
@@ -28,7 +28,7 @@ npm install
 npm run dev
 ```
 
-## ⚙️️Esta aplicación fue construida usando las siguientes tecnologías
+## ⚙️️ Esta aplicación fue construida usando las siguientes tecnologías
 
 - [React](https://reactjs.org/)
 - [Sass](https://sass-lang.com/)
